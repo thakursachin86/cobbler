@@ -1,22 +1,23 @@
-# Cobbler 批量装机
 
-> 这是一个运行在docker里的cobbler平台。
+# Cobbler Batch Installation
 
-### 文件说明
+> This is a cobbler platform that runs in docker.
 
-构建cobbler镜像的Dockerfile文件：
+### File Description
+
+Build a Cobbler Mirrored Dockerfile:
 
 - Dockerfile
 - start.sh
 
-运行cobbler容器的compose文件：
+Compose dockerfile running cobbler container:
 
 - docker-compose.yml
 - cobbler.env
 
-### 使用说明
+### Instructions for use
 
-1、首先更改`cobbler.env`变量文件里的变量信息  
-2、把系统镜像挂载到本机的`/mnt`目录下  
-3、运行cobbler容器：`docker-compose up -d`  
-4、进入cobbler容器，配置装机系统：`docker exec -it dockercobbler_cobbler_1 bash`  
+1, first change the variable information in the `cobbler.env` variable file
+2, the system image is mounted to the machine's `/mnt` directory
+3. Run the cobbler container: `docker-compose up -d`
+4, into the cobbler container, configure the installed system: `docker exec -it dockercobbler_cobbler_1 bash`
